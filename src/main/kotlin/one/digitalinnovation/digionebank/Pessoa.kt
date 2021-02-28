@@ -8,8 +8,7 @@ package one.digitalinnovation.digionebank
  * @property nome O nome da pessoa
  * @property cpf O cpf da pessoa*/
 
-abstract class Pessoa {
-
+abstract class Pessoa (
     val nome: String,
     val cpf: String
-}
+)
