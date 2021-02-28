@@ -5,7 +5,7 @@ package one.digitalinnovation.digionebank
  * @constructor primario
  * @property [PF], [PJ]
  */
-enum class ClienteTipo(descricao: String) {
+enum class ClienteTipo(val descricao: String) {
     /**
      * @return objeto do tipo enum
      */

@@ -17,8 +17,8 @@ fun main() {
     println(digiOneBank.numero)
 
     //aplicão quebrou Erro "Kotlin: Unresolved reference: copy"
-    val banco2 = digiOneBank.copy(nome="banco2")
+    //val banco2 = digiOneBank.copy(nome="banco2")
 
-    println(banco2.info())
+    //println(banco2.info())
 
 }
