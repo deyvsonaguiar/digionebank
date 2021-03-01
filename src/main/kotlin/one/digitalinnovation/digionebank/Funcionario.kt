@@ -22,8 +22,8 @@ abstract class Funcionario(
      * Função/method hook que sobrescreve o método toString formatando a saída de dados
      */
     override fun toString(): String = """
-        Nome: $nome
-        CPF: $cpf
+        Nome:    $nome
+        CPF:     $cpf
         Salário: $salario
         Auxílio: ${calculoAuxilio()}
      
