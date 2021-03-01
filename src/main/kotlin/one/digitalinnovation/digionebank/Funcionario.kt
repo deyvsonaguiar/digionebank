@@ -7,7 +7,6 @@ package one.digitalinnovation.digionebank
  *
  * @property [Pessoa.nome], [Pessoa.cpf], [salario]
  * @constructor inicializa os atributos da classe Funcionario
- * @override [Pessoa]
  */
 abstract class Funcionario(
     nome: String,
@@ -17,5 +16,16 @@ abstract class Funcionario(
     /**
      * Função que calcula o valor do auxílio ao Funcionario
      */
-    abstract fun calculoAuxilio()
+    protected abstract fun calculoAuxilio(): Double
+
+    /**
+     * Função/method hook que sobrescreve o método toString formatando a saída de dados
+     */
+    override fun toString(): String = """
+        Nome: $nome
+        CPF: $cpf
+        Salário: $salario
+        Auxílio: ${calculoAuxilio()}
+     
+    """.trimIndent()
 }
